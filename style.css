@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0px;
+}
+header{
+    background-color: #4A90E2;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px 0px 50px;
+}
+
+header .search {
+    height: 50px;
+    width: 400px;
+}
+
+header .search input[type="text"] {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background-image: url(./images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 18px;
+    padding: 0px 45px;
+    font-size: 18px;
+    outline: none;
+}
+
+header .user {
+    display: flex;
+    align-items: center;
+}
+
+header .user .username {
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+}
+
+.content .left {
+    width: 25%;
+    height: 90vh;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .left .arrow  {
+    display: none;
+    width: 8px;
+    height: 12px;
+    background: url(images/left_arrow.svg) no-repeat;
+}
+
+.content .left .left-navigation-item {
+    padding: 32px;
+    border-bottom: 1px solid #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .right {
+    width: 75%;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 150px;
+    padding-bottom: 40px;
+}
+.content .right .top {
+    display: flex;
+}
+.photo img{
+    height: 150px;
+    border: 1px solid #606060;
+}
+.like_details {
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.like_button {
+    font-size: 18px;
+    font-weight: bold;
+    background: #FE5B3F;
+    border-radius: 7px;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}  
+.description {
+    font-size: 18px;
+    color: #333;
+    margin-top: 50px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.table {
+    font-size: 18px;
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid #606060;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    text-align: left;
+    padding: 12px;
+}
+
+.table tr:nth-child(odd){background-color: #f2f2f2;}
+
+.table th {
+    background-color: gray;
+}
